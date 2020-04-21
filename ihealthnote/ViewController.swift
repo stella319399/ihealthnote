@@ -35,10 +35,29 @@ class ViewController: UIViewController {
         }
    }
 
-
-    override func viewWillDisappear(_ animated: Bool) {
-        <#code#>
+    @IBOutlet weak var accounttextflied: UITextField!
+    
+    
+    @IBOutlet weak var passwordtextflied: UITextField!
+    
+    @IBAction func loginbuttonClicked(_sender: Any) {
+        
+        let account = accounttextflied.text
+        let password = passwordtextflied.text
+        
+        print("account:\(account);password:\( password )")
+        self.performSegue(withIdentifier: "moveToMainViewSegue", sender: self)
+    
     }
+    
+      
+   
+    
+        
+    override func viewWillDisappear(_
+        animated: Bool) {
+ 
+}
 
     
     
